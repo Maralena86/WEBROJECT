@@ -1,0 +1,503 @@
+/* CSS HEX 
+--black: #000000ff;
+--dutch-white: #e3d5b2ff;
+--gunmetal: #2b3645ff;
+--bronze: #c68834ff;
+--rust: #ad4611ff;
+
+$black: rgba(0, 0, 0, 1);
+$dutch-white: rgba(227, 213, 178, 1);
+$gunmetal: rgba(43, 54, 69, 1);
+$bronze: rgba(198, 136, 52, 1);
+$rust: ;
+
+------------------2ceuleurs-------------------------------
+ CSS HEX 
+--beige: #f4f2dfff;
+--light-sea-green: #34a9a1ff;
+--burnt-sienna: #f07051ff;
+--pewter-blue: #7aa4b2ff;
+--buff: #eed48fff;
+--atomic-tangerine: #f7975dff;
+--dark-electric-blue: #415d73ff;
+
+ SCSS RGB 
+$beige: rgba(244, 242, 223, 1);
+$light-sea-green: rgba(52, 169, 161, 1);
+$burnt-sienna: rgba(240, 112, 81, 1);
+$pewter-blue: rgba(122, 164, 178, 1);
+$buff: rgba(238, 212, 143, 1);
+$atomic-tangerine:rgba(247, 151, 93, 1) ;
+$dark-electric-blue: rgba(65, 93, 115, 1);
+*/
+@font-face {
+    font-family: 'open_sans_condensedbold';
+    src: url('polices/OpenSans-CondBold-webfont.eot');
+    src: url('polices/OpenSans-CondBold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('polices/OpenSans-CondBold-webfont.woff') format('woff'),
+         url('polices/OpenSans-CondBold-webfont.ttf') format('truetype'),
+         url('polices/OpenSans-CondBold-webfont.svg#open_sans_condensedbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'journalregular';
+    src: url('polices/journal-webfont.eot');
+    src: url('polices/journal-webfont.eot?#iefix') format('embedded-opentype'),
+         url('polices/journal-webfont.woff') format('woff'),
+         url('polices/journal-webfont.ttf') format('truetype'),
+         url('polices/journal-webfont.svg#journalregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'edoregular';
+    src: url('polices/edo-webfont.eot');
+    src: url('polices/edo-webfont.eot?#iefix') format('embedded-opentype'),
+         url('polices/edo-webfont.woff') format('woff'),
+         url('polices/edo-webfont.ttf') format('truetype'),
+         url('polices/edo-webfont.svg#edoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'sinkin_sans100_thin';
+    src: url('polices/SinkinSans-100Thin-webfont.eot');
+    src: url('polices/SinkinSans-100Thin-webfont.eot?#iefix') format('embedded-opentype'),
+                url('polices/SinkinSans-100Thin-webfont.woff') format('woff'),
+         url('polices/SinkinSans-100Thin-webfont.ttf') format('truetype'),
+         url('polices/SinkinSans-100Thin-webfont.svg#sinkin_sans100_thin') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'sinkin_sans400_regular';
+    src: url('polices/SinkinSans-400Regular-webfont.eot');
+    src: url('polices/SinkinSans-400Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('polices/SinkinSans-400Regular-webfont.woff') format('woff'),
+         url('polices/SinkinSans-400Regular-webfont.ttf') format('truetype'),
+         url('polices/SinkinSans-400Regular-webfont.svg#sinkin_sans400_regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+
+.pageSet
+{
+	width: 900px;
+	margin: auto;
+}
+/* ************************************************Header *******************************************************************/
+
+header
+{
+	background-color: #f4f2dfff;
+	width: 100%;
+	min-width: 500px;
+	height: auto;
+	margin-top: 0px;
+
+}
+#titreContainer
+{
+	display: flex;
+	justify-content: space-around;
+
+}
+
+h1
+{
+	
+	color: rgba(247, 151, 93, 1);
+	margin: 0px ;
+	font-size: 5.4em;
+	font-family: 'edoregular';
+	line-height: 0.8;
+	text-shadow: 5xp 5xp 5xp blueviolet;
+	padding: 30px 5px 60px 70px;
+}
+.imageflottante
+{
+	align-self: flex-end;
+	margin-right: 0px;
+}
+/*navigation/Menu*/
+ul
+{
+	font-size: 1.5em;
+	color: white;
+	background-color: #7aa4b2ff;
+	text-align: center;
+	margin: 0px;
+	list-style-type: none;
+	padding: 8px;
+	box-shadow: 6px 6px 6px black;
+}
+header ul li
+{
+	display: inline;
+	padding: 40px;
+
+}
+ nav ul li a
+{
+	text-decoration: none;
+	color: #f4f2dfff;
+}
+ul li:hover
+{
+	background-color: rgba(247, 151, 93, 0.7);
+	padding: 10px ;
+}
+/*************************************************FIN HEADER**********************************************************************/
+/*corps de la page*/
+body
+{
+	z-index: 100;
+}
+section
+{
+	padding-bottom: 30px;
+	width: 90%;
+	justify-content: center;
+	margin: auto;
+	
+}
+article
+{
+	color: black;
+	margin-bottom: 10px;
+	padding:40px 30px; 
+}
+h2
+{
+		
+	font-size: 2.5em;
+
+	padding: 3px 20px 5px 20px;
+	
+	margin: auto;
+	font-family: 'edoregular';
+	color: #415d73ff;
+	margin-bottom: 30px;
+	border: 1px solid rgb(0, 0, 0, 0.1);
+}
+h3
+{
+	color: #f7975d;
+	font-size: 2em;
+	background-color: rgba(8, 39, 54, 0.8);
+	box-shadow: 2px 5px 4px black;
+	padding: 10px 20px;
+	font-weight: bold;
+	border-radius: 10px;
+	font-family: 'edoregular';
+	text-transform: uppercase ;
+	margin-bottom: 30px;
+	text-align: center;
+	text-shadow: 3px 3px 3px rgba(8, 39, 54, 0.7);
+
+}
+
+aside
+{	
+	color: rgba(52, 169, 161, 0.4);
+	background-color: rgba(122, 164, 178, 0.5);
+	border-radius: 10px;
+	box-shadow: 6px 6px 6px black;
+	padding: 40px 20px;
+	margin-top: 10px ;
+	flex-shrink:2;
+	margin: 10px;
+}
+p
+{
+	color: #415d73ff;
+	font-size: em;
+	font-family: 'sinkin_sans400_regular';
+	text-align: justify;
+	line-height: 1.7em;	
+	width: 90%;
+	margin: auto;
+}
+aside p
+{
+	font-size: 1.8;
+	font-family: Georgia;
+	font-style: italic;
+
+}
+
+#peuSurMoi
+{
+	opacity: 0.5;
+
+}
+.Projetsection
+{
+
+	border-radius: 3px;
+	box-shadow: 6px 6px 6px black;
+	background-color: rgb(227, 213, 178, 0.6);
+	padding: 10px;
+}
+
+.Explication
+{
+	background-color: rgba(122, 164, 178, 0.6);
+	text-align: center;
+	padding: 5px 0px 20px 30px;
+	
+	font-size: 1.8;
+	font-family: Georgia;
+	font-style: italic;
+	margin: auto
+	width: 50%;
+	color:rgba(25, 48, 66, 1) ;
+}
+.Presentation
+{
+	display: flex;
+}
+textarea
+{
+	background-color: rgb(227, 213, 178, 0.6);
+	margin-top: 10px;
+}
+
+.mail
+{
+	font-size: 1em;
+	text-decoration: none;
+	color: white;
+	background-color:rgba(247, 151, 93, 0.9);
+	border-radius: 10px;
+	padding: 10px;
+}
+.mail:hover
+{
+	padding: 15px;
+}
+audio
+{
+	padding:20px;
+	background-color: black;
+	box-shadow: 3px 3px 3px black;
+	display: block;
+    margin-left: auto;
+    margin-right: auto 
+}
+.audios
+{
+	box-shadow: 3px 3px 3px black;
+	border: 1px solid black;
+	margin: 20px;
+}
+
+.legendImg
+{
+	font-size: 0.7em;
+	
+	font-style: italic;
+	text-align: center;
+}
+.webProjects
+{
+	display: flex;
+	justify-content: space-around;
+}
+.pageWebImg
+{
+	display: flex;
+	flex-direction: column;
+	font-family: Georgia;
+	color: #415d73ff;
+	line-height: 1.1;
+	padding-bottom: 30px;
+	box-shadow: 3px 3px 3px black;
+	background-color: rgba(122, 164, 178, 0.3);
+	padding: 10px;
+	margin-bottom: 20px;
+	border-radius: 5px;
+
+	text-align: center;
+	text-decoration: none;
+}
+
+a :hover
+{
+	opacity: 0.5;
+
+}
+
+.creation
+{
+	background-color: black;
+	width: 300px;
+	display: flex;
+	flex-direction: column;
+
+}
+.Pizzicato, .ImgLuz, .imgcilindroLuz, .dessin, .gif
+{
+	display: flex;
+	margin-top: 30px;
+	margin-bottom: 20px;	
+}
+
+
+
+.dessin
+{
+	justify-content: space-around;
+	
+}
+.Pizzicato, .imgcilindroLuz, .ImgLuz
+{
+	justify-content: center;
+}
+.videoProjet, .image2cellos, #peuSurMoi, .gif, .webImg, Img
+{
+	display: block;
+    margin-left: auto;
+    margin-right: auto 
+}
+
+#image2cellos
+{
+	justify-content: center;
+}
+video,
+{
+	background-color: black;
+	width: 80%;
+	margin:  20px;
+}
+/*aside*/
+
+
+/* footer */
+footer
+{
+	
+	border-top: 1px #7B674D solid;
+	
+	color: #9B9290;
+	background-color: rgb(9, 14, 23, 0.4);
+	padding: 20px 10px;
+	
+}
+footer p
+{
+	font-family:  'sinkin_sans100_thin';
+	text-align: center;
+}
+
+
+@media screen and (max-width:  1200px)
+{
+	header
+	{
+		position: relative;
+	}
+	.pageSet
+	{
+		width: auto;
+	}
+	h1
+	{
+		font-size: 4.5em;
+		
+	}
+	h2
+	{
+		font-size: 1;
+	}
+	.imageflottante
+	{
+		height: 100px;
+		width: 150px;
+	}
+	section
+	{
+		width: 100%;
+	}
+
+	header ul li
+	{
+		display: block;
+		height: auto;
+		padding: 5px;
+	}
+	ul
+	{
+		font-size: 2em;
+		position: ;
+
+	}
+	h2
+	{
+		font-size: 1.5;
+	}
+	p
+	{
+		font-size: 1.4em;
+		width: 100%;
+	}
+	.Presentation
+	{
+		flex-direction: column;
+	}
+	.Explication
+	{
+		width :85%
+	}
+	
+	#photo_cellodanse
+	{
+		float: right;
+		margin-left: 25px;
+		width: 300px;
+		height: 300px;
+	}
+	#peuSurMoi
+	{
+		display: none;
+		width: 90%;
+	}
+	.photoPiz, .imgLuz
+	{
+		width: 250px;
+		height: 260px;
+	}
+	.webProjects
+	{
+		flex-direction: column;
+		text-align: center;
+	}
+	.dessin
+	{
+		display: flex;
+		flex-direction: column;
+		padding: 5px;
+		align-items: center;
+		background-color: black;
+	}
+	
+	.soundcloudImg
+	{
+		border-radius: 10px;
+	}
+	
+	
+}
